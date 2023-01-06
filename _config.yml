@@ -59,4 +59,4 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-theme: jekyll-theme-cayman
+theme: mediumish-theme-jekyll
