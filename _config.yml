@@ -15,6 +15,12 @@ permalink: /:title/
 authors:
   azhar:
     name: Azhar Ibn Mostafiz
+    display_name: Azhar Ibn Mostafiz
+    gravatar: 3b53e8a69a713848f3672c2db0829399
+    email: theazharul@gmail.com
+    web: https://theazharul.github.io/
+    twitter: https://twitter.com/theazharul
+    description: "Sr. Software Engineer at Nurency Digital."
   sal:
     name: Sal
     display_name: Sal
