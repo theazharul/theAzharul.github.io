@@ -5,6 +5,7 @@ author: azhar
 categories: [Doom Emacs, Org Mode]
 image: assets/images/16.jpg
 featured: true
+hide: true
 ---
 
 Convert org heading to Todo item => S <Right Arrow>
