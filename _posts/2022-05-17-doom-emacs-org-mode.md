@@ -7,7 +7,7 @@ image: assets/images/16.jpg
 featured: true
 ---
 
-Convert org heading to Todo item => S <Right Arrow>  
+Convert org heading to Todo item => S <<Right Arrow>>  
 Add new tag => SPC m q  
 Schedule a todo => SPC m d s  
 Set Deadline for todo => SPC m d d  
