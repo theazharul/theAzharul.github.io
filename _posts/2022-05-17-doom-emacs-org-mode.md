@@ -4,7 +4,7 @@ title: "Doom Emacs: Org Mode"
 author: azhar
 categories: [Doom Emacs, Org Mode]
 image: assets/images/emacs/org-mode/1200px-Org-mode-unicorn.svg_-704x765.png
-featured: true
+featured: false
 ---
 
 Convert org heading to Todo item => S \<Right Arrow\>  
