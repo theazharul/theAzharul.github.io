@@ -4,7 +4,7 @@ title: "Mac অপারেটিং সিস্টেমে Emacs ইন্স
 author: azhar
 categories: [Emacs, Mac]
 image: assets/images/emacs/emacs-logo.jpg
-featured: true
+featured: false
 ---
 
 আমরা Mac-এ গ্রাফিকাল ইউজার ইন্টারফেসসহ Emacs পাওয়ার জন্য Homebrew-Emacs-Plus ইন্সটল করে নেবো। সেজন্য টার্মিনালে নিচের কমান্ডগুলো লিখবো-
