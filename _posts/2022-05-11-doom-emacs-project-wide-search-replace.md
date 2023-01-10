@@ -4,7 +4,7 @@ title: "Doom Emacs এ পুরো প্রজেক্টে একাধি�
 author: azhar
 categories: [Doom Emacs, Projectile]
 image: assets/images/emacs/doom-emacs/find-replace.jpg
-featured: true
+featured: false
 ---
 
 for ivy module users
