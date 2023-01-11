@@ -23,7 +23,6 @@ meta:
   _yoast_wpseo_content_score: "90"
   _yoast_wpseo_estimated-reading-time-minutes: "1"
 author: azhar
-permalink: "/"
 ---
 
 ইমেকস (Emacs) এবং ভিম ( Vim ) খুবই পুরনো এবং জনপ্রিয় দুটি টেক্সট এডিটর (Text Editor)। [Editor War](https://en.wikipedia.org/wiki/Editor_war) বললে সাধারণত এই দুটি এডিটরের মধ্যে কোনটি অধিক ভালো এই বিতর্কটিই উঠে আসে। দুটি এডিটরকেই আমরা আমাদের প্রয়োজন অনুযায়ী সাজিয়ে নিতে পারি (Customizable) এবং বিভিন্ন প্লাগইনসের মাধ্যমে আমরা এডিটরগুলোর কাজের পরিধি বৃদ্ধি করতে পারি (Extensible)। ইমেকস-এ Org mode এর মত অসাধারণ কিছু প্লাগইনস আছে অন্যদিকে ভিম-এর রয়েছে দ্রুত কাজ করার উপযোগী Key Bindings. এই দুই এডিটরের বিতর্কে Spacemacs উপসংহার টেনেছে এভাবে "The best editor is neither Emacs nor Vim, it's Emacs and Vim!".  

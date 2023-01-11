@@ -24,7 +24,6 @@ meta:
   _yoast_wpseo_content_score: "60"
   _yoast_wpseo_estimated-reading-time-minutes: "1"
 author: azhar
-permalink: "/"
 ---
 
 যে ছেলেটি ছোট্ট অতি পায় না খেতে ভাত

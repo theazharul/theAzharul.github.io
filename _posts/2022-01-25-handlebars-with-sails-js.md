@@ -24,7 +24,6 @@ meta:
   _yoast_wpseo_content_score: "90"
   _yoast_wpseo_estimated-reading-time-minutes: "1"
 author: azhar
-permalink: "/"
 ---
 
 Node.js এর জনপ্রিয় ফ্রেমওয়ার্ক Sails.js এর সাথে টেমপ্লেট ইঞ্জিন হিসেবে ejs দেয়া থাকে। তবে আমরা চাইলে ejs এর পরিবর্তে handlebars ব্যবহার করতে পারি।

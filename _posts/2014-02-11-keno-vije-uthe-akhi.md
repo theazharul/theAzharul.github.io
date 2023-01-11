@@ -20,7 +20,6 @@ meta:
   publicize_twitter_user: theazharul
   _jetpack_related_posts_cache: a:2:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1643237865;s:7:"payload";a:1:{i:0;a:1:{s:2:"id";i:112;}}}s:32:"37550b67d263a3ce789993dc25046c5f";a:2:{s:7:"expires";i:1643268240;s:7:"payload";a:1:{i:0;a:1:{s:2:"id";i:112;}}}}
 author: azhar
-permalink: "/"
 ---
 
 কষ্ট ঢাকার শত আয়োজন,  

@@ -24,7 +24,6 @@ meta:
   _yoast_wpseo_estimated-reading-time-minutes: "3"
   _thumbnail_id: "238"
 author: azhar
-ermalink: "/"
 ---
 
 পাইথন প্রোগ্রামিং ল্যাঙ্গুয়েজে কাজ করার সময় মাঝে মধ্যে আমাদেরকে পাইথনের বিভিন্ন ভার্সনে সুইচ(switch) করতে হয়। এই কাজটি করার জন্য pyenv প্যাকেজটি অনেক বেশি জনপ্রিয়।

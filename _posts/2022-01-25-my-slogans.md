@@ -24,7 +24,6 @@ meta:
   _yoast_wpseo_content_score: "60"
   _yoast_wpseo_estimated-reading-time-minutes: "1"
 author: azhar
-permalink: "/"
 ---
 
 স্বপ্নগুলো আকাশ পানে উড়িয়ে দিলাম আজ,

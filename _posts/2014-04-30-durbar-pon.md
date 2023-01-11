@@ -23,7 +23,6 @@ meta:
   _yoast_wpseo_content_score: "90"
   _yoast_wpseo_estimated-reading-time-minutes: "1"
 author: azhar
-permalink: "/"
 ---
 
 অসীমের সীমানায় বেঁধে রেখে মন  

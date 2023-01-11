@@ -1,25 +1,10 @@
 ---
 layout: post
 title: ভার্সন কন্ট্রোল সিস্টেম – গিট (git)-পর্ব-১
-date: 2013-09-07 10:25:10.000000000 +06:00
 type: post
-parent_id: "0"
-published: true
-password: ""
-status: publish
 categories: [গিট, ভার্সন কন্ট্রোল সিস্টেম]
 tags: [গিট, ভার্সন কন্ট্রোল সিস্টেম]
-meta:
-  _edit_last: "1"
-  publicize_reach: a:2:{s:7:"twitter";a:1:{i:4514541;i:104;}s:2:"wp";a:1:{i:0;i:2;}}
-  publicize_twitter_user: theazharul
-  _wpas_done_4514541: "1"
-  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:91116567;b:1;}}
-  _last_editor_used_jetpack: block-editor
-  _publicize_job_id: "68133134633"
-  _jetpack_related_posts_cache: a:1:{s:32:"37550b67d263a3ce789993dc25046c5f";a:2:{s:7:"expires";i:1643268262;s:7:"payload";a:1:{i:0;a:1:{s:2:"id";i:7;}}}}
 author: azhar
-permalink: "/"
 ---
 
 গিট নিয়ে কাজ শুরু করার আগে আসুন জেনে নেই, ভার্সন কন্ট্রোল কি?
