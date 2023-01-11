@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Emacs টেবিলে হিসাব নিকাশ
-date:
 type: post
 parent_id: "0"
 published: false
