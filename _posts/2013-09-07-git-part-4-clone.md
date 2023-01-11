@@ -7,10 +7,8 @@ parent_id: "0"
 published: true
 password: ""
 status: publish
-categories:
-  - গিট
-  - ভার্সন কন্ট্রোল সিস্টেম
-tags: []
+categories: [প্রোগ্রামিং]
+tags: [গিট, ভার্সন কন্ট্রোল সিস্টেম]
 meta:
   _edit_last: "1"
   publicize_twitter_user: theazharul

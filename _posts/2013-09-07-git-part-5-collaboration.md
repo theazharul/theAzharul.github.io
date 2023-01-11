@@ -7,10 +7,8 @@ parent_id: "0"
 published: true
 password: ""
 status: publish
-categories:
-  - গিট
-  - ভার্সন কন্ট্রোল সিস্টেম
-tags: []
+categories: [প্রোগ্রামিং]
+tags: [গিট, ভার্সন কন্ট্রোল সিস্টেম]
 meta:
   _edit_last: "1"
   publicize_reach: a:2:{s:7:"twitter";a:1:{i:4514541;i:104;}s:2:"wp";a:1:{i:0;i:2;}}

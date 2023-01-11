@@ -2,7 +2,7 @@
 layout: post
 title: ভার্সন কন্ট্রোল সিস্টেম – গিট (git)-পর্ব-১
 type: post
-categories: [গিট, ভার্সন কন্ট্রোল সিস্টেম]
+categories: [প্রোগ্রামিং]
 tags: [গিট, ভার্সন কন্ট্রোল সিস্টেম]
 author: azhar
 ---
