@@ -1,0 +1,159 @@
+---
+layout: post
+title: pyenv এর সাথে virtualenv এর ব্যবহার
+date: 2016-08-22 10:27:54.000000000 +06:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+  geo_public: '0'
+  _publicize_job_id: '10713026189'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:4514541;s:56:"https://twitter.com/theazharul/status/923134260042756096";}}
+  _publicize_done_4607822: '1'
+  _wpas_done_4514541: '1'
+  publicize_twitter_user: theazharul
+  _wpas_skip_4514546: '1'
+  _wpas_skip_4514541: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"37550b67d263a3ce789993dc25046c5f";a:2:{s:7:"expires";i:1643268204;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:7;}i:1;a:1:{s:2:"id";i:194;}i:2;a:1:{s:2:"id";i:123;}}}}
+  _yoast_wpseo_content_score: '90'
+  _yoast_wpseo_estimated-reading-time-minutes: '3'
+  _thumbnail_id: '238'
+author:
+  login: azhar
+  email: theazharul@gmail.com
+  display_name: azhar
+  first_name: ''
+  last_name: ''
+permalink: "/"
+---
+<p><!-- wp:paragraph --></p>
+<p>পাইথন প্রোগ্রামিং ল্যাঙ্গুয়েজে কাজ করার সময় মাঝে মধ্যে আমাদেরকে পাইথনের বিভিন্ন ভার্সনে সুইচ(switch) করতে হয়। এই কাজটি করার জন্য pyenv প্যাকেজটি অনেক বেশি জনপ্রিয়।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>আবার অনেক সময় বিভিন্ন প্রজেক্ট নিয়ে কাজ করার জন্য ভার্চুয়াল ইনভার্নমেন্ট তৈরি করে কাজ করতে পারি। সেই ভার্চুয়াল ইনভার্নমেন্টে আমাদের পছন্দের পাইথন প্যাকেজ ইন্সটল করতে পারি যা মূল অপারেটিং সিস্টেমের প্যাকেজের সাথে কনফ্লিক্ট করে না। এই ধরনের পরিবেশ তৈরি করার জন্য আমরা সাধারনত virtualenv প্যাকেজটি ব্যবহার করি।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>তাহলে চলুন দেখে নেয়া যাক কিভাবে pyenv এবং virtualenv ইন্সটল ও ব্যবহার করা যায়।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3 id="pyenv">pyenv ইন্সটল করা:</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>উবুন্টুতে ডিপেন্ডেন্সিগুলো ইন্সটল করে নিন।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>sudo apt-get install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4>পদ্ধতি-১:</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>টার্মিনালে নিচের কমান্ডটি রান করুন<br /><code>curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer <span class="pl-k">|</span> bash</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4>পদ্ধতি-২:</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>আপনি চাইলে pip দিয়েও pyenv ইন্সটল করতে পারেন।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>প্রথমে <a href="https://bootstrap.pypa.io/get-pip.py">get-pip.py</a> ডাউনলোড করে নিন এবং টার্মিনালে নিচের কমান্ডটি দিয়ে pip ইন্সটল করে নিন।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>‌‌‌‌‌‌‍<code>$ python3 get-pip.py</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>$ pip install --egg pyenv</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>ব্যস, আপনার pyenv সেটআপ সম্পন্ন হয়েছে। এখন আপনি চাইলেই তৈরিকৃত pyenv এর মধ্যে যেকোন পাইথন ভার্সন ইন্সটল করে নিতে পারেন। ধরুন আমরা পাইথন ল্যাঙ্গুয়েজের 3.6.1 ভার্সনটি ইন্সটল করবো। সেজন্য আপনাকে কমান্ড দিতে হবে -</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>$ pyenv install 3.6.1</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>এভাবে pyenv install এর পর আপনার যে ভার্সনটি ইন্সটল করা দরকার তার ভার্সন লিখে দিলেই pyenv সেই ভার্সনটি ডাউনলোড করে ইন্সটল করে নিবে।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>আপনার ইনভার্নমেন্টে কোন কোন ভার্সন ইন্সটল করা আছে সে তালিকা দেখার জন্য নিচের কমান্ডটি লিখতে হবে।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>$ pyenv versions</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>এখন আপনার যে ভার্সনটি দরকার সেটি ব্যবহার করার জন্য টার্মিনালে কমান্ড দিতে হবে -</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>$ pyenv global &lt;version&gt;</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>এখানে &lt; version &gt; এর জায়গায় আপনি pyenv এ ইন্সটল করা যে পাইথন ভার্সনটি ব্যবহার করতে চান সেটি লিখে দিতে হবে।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3} --></p>
+<h3 id="pyenvvirtualenv">pyenv এর সাথে virtualenv এর ব্যবহার:</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4 id="virtualenv">virtualenv ইন্সটল করা:</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>pyenv এর সাথে virtualenv ব্যবহার করার জন্য আমাদেরকে প্রথমে pyenv এর একটি প্লাগইন ডাউনলোড করে নিতে হবে। প্লাগইনটি ডাউনলোড করার জন্য টার্মিনালে লিখতে হবে -<br /><code>$ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>এরপর এই কমান্ডটি দিন -</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>$ echo 'eval "$(pyenv virtualenv-init -)"' &gt;&gt; ~/.bashrc</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>পরিবর্তনগুলো কাজ করার জন্য নিচের কমান্ডটি দিন -</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>$ exec "$SHELL"</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":4} --></p>
+<h4 id="virtualenv">virtualenv এর ব্যবহার:</h4>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>এখন আপনি যদি একটি ভার্চুয়াল ইনভার্নমেন্ট তৈরি করতে চান তাহলে আপনাকে টার্মিনালে লিখতে হবে -</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>$ pyenv virtualenv &lt;python_version&gt; &lt;name&gt;</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>এখানে &lt; name &gt; এর জায়গায় ভার্চুয়াল ইনভার্নমেন্ট এর জন্য একটি নাম দিন।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>ভার্চুয়াল ইনভার্নমেন্টের তালিকা দেখার জন্য - <code>$ pyenv virtualenvs</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>ভার্চুয়াল ইনভার্নমেন্টটি সচল করার জন্য কমান্ড হবে -</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>$ pyenv activate &lt;name&gt;</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>এখানে &lt; name &gt; এর জায়গায় আপনার তৈরিকৃত যেকোন একটি ভার্চুয়াল ইনভার্নমেন্ট এর নাম দিতে হবে।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>আর বন্ধ করার জন্য - <code>$ pyenv deactivate</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>সবচেয়ে মজার বিষয় হচ্ছে, আপনি চাইলে আপনার প্রজেক্টের জন্য একটি নির্দিষ্ট পাইথন ভার্সন অথবা ভার্চুয়াল ইনভার্নমেন্ট নির্ধারন করে দিতে পারবেন। যার ফলে আপনাকে প্রত্যেকটা প্রজেক্টের জন্য আলাদাভাবে বারবার ভার্সন অথবা ইনভার্নমেন্ট activate করতে হবেনা।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>এই কাজটি করার জন্য টার্মিনাল দিয়ে আপনার প্রজেক্টের ডিরেক্টরিতে প্রবেশ করুন। এরপর নিচের কমান্ডের মাধ্যমে ভার্চুয়াল ইনভার্নমেন্ট নির্ধারন করে দিন।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><code>$ pyenv local &lt;virtualenv or version&gt;</code></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>এরপর থেকে আপনি যখনই টার্মিনাল দিয়ে আপনার প্রজেক্ট ফোল্ডারে ঢুকবেন সাথে সাথে আপনার কাঙ্খিত পাইথন ভার্সন অথবা ভার্চুয়াল ইনভার্নমেন্ট চালু হয়ে যাবে। :)</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>আজ এ পর্যন্তই। :)</p>
+<p><!-- /wp:paragraph --></p>

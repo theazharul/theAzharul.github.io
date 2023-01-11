@@ -1,0 +1,54 @@
+---
+layout: post
+title: Mac অপারেটিং সিস্টেমে Emacs ইন্সটল করা
+date: 2022-01-26 14:34:34.000000000 +06:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- emacs
+- mac
+meta:
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1648312898;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:7;}i:1;a:1:{s:2:"id";i:112;}i:2;a:1:{s:2:"id";i:109;}}}}
+  _last_editor_used_jetpack: block-editor
+  _publicize_twitter_user: "@theazharul"
+  _edit_last: '1'
+  _yoast_wpseo_estimated-reading-time-minutes: '1'
+  _thumbnail_id: '224'
+  _yoast_wpseo_metadesc: আমরা Mac-এ গ্রাফিকাল ইউজার ইন্টারফেসসহ Emacs পাওয়ার জন্য
+    Homebrew-Emacs-Plus ( https://github.com/d12frosted/homebrew-emacs-plus ) ইন্সটল
+    করে নেবো।
+  _yoast_wpseo_content_score: '90'
+  _wpas_done_all: '1'
+author:
+  login: azhar
+  email: theazharul@gmail.com
+  display_name: azhar
+  first_name: ''
+  last_name: ''
+permalink: "/"
+---
+<p><!-- wp:paragraph --></p>
+<p>আমরা Mac-এ গ্রাফিকাল ইউজার ইন্টারফেসসহ Emacs পাওয়ার জন্য <a href="https://github.com/d12frosted/homebrew-emacs-plus" target="_blank" rel="noreferrer noopener">Homebrew-Emacs-Plus</a>  ইন্সটল করে নেবো। সেজন্য টার্মিনালে নিচের কমান্ডগুলো লিখবো-</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:syntaxhighlighter/code {"language":"bash"} --></p>
+<pre class="wp-block-syntaxhighlighter-code">$ brew tap d12frosted/emacs-plus</pre>
+<p><!-- /wp:syntaxhighlighter/code --></p>
+<p><!-- wp:syntaxhighlighter/code {"language":"bash"} --></p>
+<pre class="wp-block-syntaxhighlighter-code">$ brew install emacs-plus</pre>
+<p><!-- /wp:syntaxhighlighter/code --></p>
+<p><!-- wp:paragraph --></p>
+<p>আমাদের Emacs ইন্সটল করা হয়েছে। এখন আমরা টার্মিনালে <code>emacs</code> লিখলে টার্মিনালে Emacs প্রদর্শণ করবে। কিন্তু Launchpad থেকে Emacs ওপেন করার জন্য Emacs অ্যাপটাকে Applications ফোল্ডারে লিংক করে দিতে হবে। সেজন্য আমরা টার্মিনালে লিখবো-</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:syntaxhighlighter/code --></p>
+<pre class="wp-block-syntaxhighlighter-code">$ ln -s /usr/local/opt/emacs-plus@27/Emacs.app /Applications</pre>
+<p><!-- /wp:syntaxhighlighter/code --></p>
+<p><!-- wp:paragraph --></p>
+<p>এই কমান্ডটি আমরা emacs-plus ইন্সটল করার পর টার্মিনাল Info এর মধ্যে দেখতে পাবো। ভার্সনভেদে কমান্ড ভিন্ন রকমও হতে পারে যা আমরা টার্মিনালেই দেখতে পাবো।</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>এখন আমরা Launchpad থেকেই Emacs ওপেন করতে পারবো।</p>
+<p><!-- /wp:paragraph --></p>
